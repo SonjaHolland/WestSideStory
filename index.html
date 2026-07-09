@@ -206,7 +206,8 @@ function playVideo(i){
     player.src =
         "https://www.youtube.com/embed/" +
         playlist[i] +
-        "?autoplay=1&controls=0&rel=0&modestbranding=1&fs=1";
+        "?autoplay=1&controls=0&rel=0&modestbranding=1&fs=1" +
+        "&loop=1&playlist=" + playlist.join(",");
 }
 
 powerBtn.addEventListener("click", () => {
